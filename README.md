@@ -72,6 +72,7 @@ python app.py
 python waitress-server.py
 ```
 
+<br><br>
 
 ## 2. Usage
 
@@ -347,7 +348,7 @@ axios(config)
 ```
 
 #### Response example
-![](detections/detection.png)
+![](data/helpers/detection.png)
 <br><br><br>
 ### Detections by image urls(POST http://localhost:5050/detetions/by-url-list)
 need image url list json form
@@ -574,12 +575,12 @@ need image url list json form
 }
 ```
 
-#### Response example(not same)
-![](detections/detection.png)
+#### Response example
+![](data/helpers/detection0.png)
 
 <br><br>
 
 ## Reference
-https://github.com/theAIGuysCode/tensorflow-yolov4-tflite
-https://github.com/theAIGuysCode/Object-Detection-API
+https://github.com/theAIGuysCode/tensorflow-yolov4-tflite<br>
+https://github.com/theAIGuysCode/Object-Detection-API<br>
 https://www.youtube.com/channel/UCrydcKaojc44XnuXrfhlV8Q
