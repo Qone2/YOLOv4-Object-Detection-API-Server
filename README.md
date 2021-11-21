@@ -1,7 +1,7 @@
 # YOLOv4 Object Detection API Server
 
-This repository is mixture version of https://github.com/theAIGuysCode/Object-Detection-API and
-https://github.com/theAIGuysCode/tensorflow-yolov4-tflite.
+This repository is mixture version of https://github.com/theAIGuysCode/Object-Detection-API (YOLOv3 REST API) and
+https://github.com/theAIGuysCode/tensorflow-yolov4-tflite (YOLOv4).
 so that I added REST API functions on YOLOv4.
 
 YOLOv4, YOLOv4-tiny Implemented in Tensorflow 2.0. Convert YOLO v4, YOLOv3, YOLO tiny .weights to .pb, .tflite and trt format for tensorflow, tensorflow lite, tensorRT, Flask, REST API.
@@ -687,6 +687,7 @@ need image url list json form
 <br><br>
 
 ## Reference
-https://github.com/theAIGuysCode/tensorflow-yolov4-tflite<br>
-https://github.com/theAIGuysCode/Object-Detection-API<br>
-https://www.youtube.com/channel/UCrydcKaojc44XnuXrfhlV8Q
+for more information
+- https://github.com/theAIGuysCode/tensorflow-yolov4-tflite
+- https://github.com/theAIGuysCode/Object-Detection-API
+- https://www.youtube.com/channel/UCrydcKaojc44XnuXrfhlV8Q
