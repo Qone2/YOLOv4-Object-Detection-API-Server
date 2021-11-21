@@ -350,13 +350,14 @@ axios(config)
 #### Response example
 ![](data/helpers/detection.png)
 <br><br><br>
-### Detections by image urls(POST http://localhost:5050/detetions/by-url-list)
+### Detections by image url list(POST http://localhost:5050/detetions/by-url-list)
 need image url list json form
 #### Request example
 ```json
 {
     "images" : [
-            "https://images.unsplash.com/photo-1627662055794-94ab33f5913a"
+            "https://images.unsplash.com/photo-1627662055794-94ab33f5913a",
+            "https://images.unsplash.com/photo-1622495506073-56b1152a010c"
         ]
 }
 ```
@@ -556,6 +557,111 @@ need image url list json form
                         0.42829829454421997,
                         0.8111904263496399,
                         0.6795439720153809
+                    ]
+                }
+            ]
+        },
+        {
+            "image": "Image2",
+            "detections": [
+                {
+                    "class": "car",
+                    "confidence": 99.69,
+                    "box": [
+                        0.5025718212127686,
+                        0.7234153747558594,
+                        0.7635517120361328,
+                        1.0
+                    ]
+                },
+                {
+                    "class": "person",
+                    "confidence": 99.66,
+                    "box": [
+                        0.35710421204566956,
+                        0.5226522088050842,
+                        1.0,
+                        0.7466851472854614
+                    ]
+                },
+                {
+                    "class": "person",
+                    "confidence": 97.54,
+                    "box": [
+                        0.3798726201057434,
+                        0.2394254505634308,
+                        1.0,
+                        0.48451125621795654
+                    ]
+                },
+                {
+                    "class": "car",
+                    "confidence": 71.75,
+                    "box": [
+                        0.5769619941711426,
+                        0.5101941823959351,
+                        0.6027512550354004,
+                        0.5349882245063782
+                    ]
+                },
+                {
+                    "class": "car",
+                    "confidence": 63.76,
+                    "box": [
+                        0.5723065733909607,
+                        0.44900795817375183,
+                        0.6150549054145813,
+                        0.4942472577095032
+                    ]
+                },
+                {
+                    "class": "car",
+                    "confidence": 51.63,
+                    "box": [
+                        0.5714143514633179,
+                        0.7081544399261475,
+                        0.6126457452774048,
+                        0.7267464995384216
+                    ]
+                },
+                {
+                    "class": "bottle",
+                    "confidence": 50.08,
+                    "box": [
+                        0.7275638580322266,
+                        0.4005502760410309,
+                        0.8659540414810181,
+                        0.43661025166511536
+                    ]
+                },
+                {
+                    "class": "bottle",
+                    "confidence": 37.36,
+                    "box": [
+                        0.6906132698059082,
+                        0.5630847215652466,
+                        0.7971134185791016,
+                        0.5943212509155273
+                    ]
+                },
+                {
+                    "class": "truck",
+                    "confidence": 29.39,
+                    "box": [
+                        0.5723065733909607,
+                        0.44900795817375183,
+                        0.6150549054145813,
+                        0.4942472577095032
+                    ]
+                },
+                {
+                    "class": "car",
+                    "confidence": 27.56,
+                    "box": [
+                        0.57332843542099,
+                        0.4903745949268341,
+                        0.5998010635375977,
+                        0.5043953061103821
                     ]
                 }
             ]
