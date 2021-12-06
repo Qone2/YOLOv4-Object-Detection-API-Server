@@ -1,4 +1,4 @@
-name: yolov3-gpu
+name: yolov4-gpu
 
 channels:
   - apple

@@ -17,6 +17,10 @@ conda activate yolov4-cpu
 # Tensorflow GPU
 conda env create -f conda-gpu.yml
 conda activate yolov4-gpu
+
+# For apple silicon mac
+conda env create -f conda-gpu-apple-silicon-mac.yml
+conda activate yolov4-gpu
 ```
 
 ### Pip
