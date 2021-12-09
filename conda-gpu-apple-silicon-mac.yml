@@ -14,7 +14,7 @@ dependencies:
   - pillow
   - waitress
   - paste
-  - easydic
+  - easydict
   - pip:
       - tensorflow-macos
       - tensorflow-metal
