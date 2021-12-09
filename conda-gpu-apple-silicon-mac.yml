@@ -2,6 +2,7 @@ name: yolov4-gpu
 
 channels:
   - apple
+  - conda-forge
 dependencies:
   - tensorflow-deps
   - matplotlib
@@ -13,6 +14,7 @@ dependencies:
   - pillow
   - waitress
   - paste
+  - easydic
   - pip:
       - tensorflow-macos
       - tensorflow-metal
