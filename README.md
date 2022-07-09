@@ -80,6 +80,16 @@ python waitress-server.py
 
 ## 2. Usage
 
+### Image Upload (http://localhost:5050)
+The output will be generated and saved into `static/detections/OUTPUT_NAME.png`
+#### Request example
+![](data/helpers/image_upload_request.png)
+
+#### Response example
+![](data/helpers/image_upload_response.png)
+
+<br><br>
+
 ### Detections by image files (POST http://localhost:5050/detections/by-image-files)
 need more than 0 image files, multipart/form-data, key name is "images"
 
@@ -687,16 +697,6 @@ need image url list json form
 
 #### Response example
 ![](data/helpers/detection0.png)
-
-<br><br>
-
-### Image Upload (http://localhost:5050)
-The output will be generated and saved into `static/detections/OUTPUT_NAME.png`
-#### Request example
-![](data/helpers/image_upload_request.png)
-
-#### Response example
-![](data/helpers/image_upload_response.png)
 
 <br><br>
 
