@@ -1,4 +1,5 @@
 import tensorflow as tf
+
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 if len(physical_devices) > 0:
     tf.config.experimental.set_memory_growth(physical_devices[0], True)
@@ -30,8 +31,8 @@ score = 0.25
 class Flag:
     tiny = tiny
     model = model
-    
-    
+
+
 config = ConfigProto()
 config.gpu_options.allow_growth = True
 session = InteractiveSession(config=config)
@@ -52,7 +53,7 @@ print("loaded")
 
 @app.route('/')
 def home():
-	return render_template('./index.html')
+    return render_template('./index.html')
 
 
 # API that returns JSON with classes found in images
@@ -266,7 +267,7 @@ def get_image_by_image_file():
 
     image = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
     # Download file detected.png and save it to output folder
-    cv2.imwrite(output_path + image_filename[0:len(image_filename)-4] + '.png', image)
+    cv2.imwrite(output_path + image_filename[0:len(image_filename) - 4] + '.png', image)
     # cv2.imwrite(output_path + 'detection' + '.png', image)
 
     # prepare image for response
