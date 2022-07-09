@@ -34,7 +34,9 @@ pip install -r requirements-gpu.txt
 
 ## Downloading Official Pre-trained Weights
 YOLOv4 comes pre-trained and able to detect 80 classes. For easy demo purposes we will use the pre-trained weights.
-Download pre-trained yolov4.weights file: https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT
+Download pre-trained yolov4.weights file: https://github.com/AlexeyAB/darknet/releases/download/yolov4/yolov4.weights
+or
+https://github.com/AlexeyAB/darknet/releases
 
 Copy and paste yolov4.weights from your downloads folder into the 'data' folder of this repository.
 
