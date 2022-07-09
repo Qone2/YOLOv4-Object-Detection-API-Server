@@ -690,6 +690,16 @@ need image url list json form
 
 <br><br>
 
+### Image Upload (http://localhost:5050)
+The output will be generated and saved into `static/detections/OUTPUT_NAME.png`
+#### Request example
+![](data/helpers/image_upload_request.png)
+
+#### Response example
+![](data/helpers/image_upload_response.png)
+
+<br><br>
+
 ## Reference
 for more information
 - https://github.com/theAIGuysCode/tensorflow-yolov4-tflite

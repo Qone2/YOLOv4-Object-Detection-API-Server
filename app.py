@@ -12,7 +12,7 @@ import numpy as np
 from tensorflow.compat.v1 import ConfigProto
 from tensorflow.compat.v1 import InteractiveSession
 import time
-from flask import Flask, request, Response, jsonify, send_from_directory, abort
+from flask import Flask, request, Response, jsonify, send_from_directory, abort, render_template
 import os
 import json
 import requests
@@ -22,7 +22,7 @@ weights_path = './checkpoints/yolov4-416'
 size = 416
 tiny = False
 model = 'yolov4'
-output_path = './detections/'
+output_path = './static/detections/'
 iou = 0.45
 score = 0.25
 
@@ -48,6 +48,11 @@ else:
 # Initialize Flask application
 app = Flask(__name__)
 print("loaded")
+
+
+@app.route('/')
+def home():
+	return render_template('./index.html')
 
 
 # API that returns JSON with classes found in images
@@ -174,6 +179,7 @@ def get_detections_by_image_files():
 @app.route('/image/by-image-file', methods=['POST'])
 def get_image_by_image_file():
     image = request.files["images"]
+    image_filename = image.filename
     image_path = "./temp/" + image.filename
     image.save(os.path.join(os.getcwd(), image_path[2:]))
 
@@ -259,7 +265,9 @@ def get_image_by_image_file():
     image = Image.fromarray(image.astype(np.uint8))
 
     image = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
-    cv2.imwrite(output_path + 'detection' + '.png', image)
+    # Download file detected.png and save it to output folder
+    cv2.imwrite(output_path + image_filename[0:len(image_filename)-4] + '.png', image)
+    # cv2.imwrite(output_path + 'detection' + '.png', image)
 
     # prepare image for response
     _, img_encoded = cv2.imencode('.png', image)
@@ -267,6 +275,7 @@ def get_image_by_image_file():
 
     # remove temporary image
     os.remove(image_path)
+    # print(f"{image.filename}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
     try:
         return Response(response=response, status=200, mimetype='image/png')
