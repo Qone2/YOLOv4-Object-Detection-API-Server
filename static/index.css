@@ -20,14 +20,13 @@ html {
 }
 
 
-
-.pre_img{
+.pre_img {
   height: 600px;
   width: 600px;
   /* background-color: white; */
 }
 
-input[type=file]{
+input[type=file] {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -36,13 +35,13 @@ input[type=file]{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 40px 40px;
   /* display: none; */
 
 }
 
-#pre{
+#pre {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -51,11 +50,11 @@ input[type=file]{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 10px 40px;
 }
 
-p{
+p {
   margin: 50px;
   font-size: 72px;
 }
