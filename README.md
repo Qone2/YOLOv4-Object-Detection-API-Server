@@ -366,7 +366,7 @@ axios(config)
 #### Response example
 ![](data/helpers/detection.png)
 <br><br><br>
-### Detections by image url list(POST http://localhost:5050/detetions/by-url-list)
+### Detections by image url list(POST http://localhost:5050/detections/by-url-list)
 need image url list json form
 #### Request example
 ```json
